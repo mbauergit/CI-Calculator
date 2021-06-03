@@ -13,4 +13,3 @@ class TestCalculatorApp:
 
     def test_mul(self):
         assert 10 == calculator.mul(5, 2)
-        
