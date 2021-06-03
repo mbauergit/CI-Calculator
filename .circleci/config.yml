@@ -1,3 +1,4 @@
+# config file
 version: 2
 jobs:
   build:
@@ -19,8 +20,8 @@ jobs:
           pip install -r requirements.txt
       # Step 3: run linter and tests
       - run:
-        name: run tests
-        command: |
-          . venv\Scripts\Activate
-          flake8 --exclude=venv* --statistics
-          pytest -v --cov=calculator
+          name: run tests
+          command: |
+            . venv\Scripts\Activate
+            flake8 --exclude=venv* --statistics
+            pytest -v --cov=calculator
